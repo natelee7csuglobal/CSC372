@@ -1,27 +1,21 @@
-package student;
+package module8;
 
-public class Student {
-    int rollno;
-    String name;
-    String address;
+class Student {
+    private String name;
+    private String address;
+    private double GPA;
 
-    // Constructor
-    public Student(int rollno, String name, String address) {
-        this.rollno = rollno;
+    public Student(String name, String address, double GPA) {
         this.name = name;
         this.address = address;
-    }
-
-    // Getters and other methods if necessary
-    public int getRollno() {
-        return rollno;
+        this.GPA = GPA;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getAddress() {
-        return address;
+    public String toString() {
+        return "Name: " + name + ", Address: " + address + ", GPA: " + GPA;
     }
 }
